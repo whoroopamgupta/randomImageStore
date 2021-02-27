@@ -1,0 +1,379 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(167, 192, 238);
+}
+html{
+    scroll-behavior: smooth;
+}
+.float{
+    float: right;
+    margin-right: 20vw;
+    
+}
+#myInput{
+    margin-top: 3rem ;
+    height: 2rem;
+    width: 50vw;
+    margin-left: 25vw;
+    margin-bottom: 3rem;
+    border: none;
+    border-bottom: 1px solid black;
+    background: transparent;
+}
+#myInput:focus{
+    outline: none;
+}
+h2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: brown;
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin: auto;
+    height: 10vh;
+    background: rgb(85, 62, 62);
+}
+.btn{
+    padding: 0.3rem;
+    background: black;
+    color: white;
+    /* font-weight: bold; */
+    cursor: pointer;
+    border: 0.1rem solid blue;
+    border-radius: 0.3rem;
+}
+.btn:hover{
+    color: red;
+    background: black;
+
+}
+
+
+.projects{
+    position: relative;
+}
+
+.projects ul{
+    position: absolute;
+    background: rgb(180, 152, 152);    
+    margin-top: 0.7rem;
+    width: 13rem;
+    height: 13rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    list-style: none;
+    border-radius: 0.33rem;
+    opacity: 0;
+
+}
+.projects a{
+    color: black;
+    text-decoration: none;
+}
+.projects li{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.projects li:hover{
+    background: rgb(151, 88, 88);
+    border-radius: 0.33rem;
+
+}
+.projects button{
+    background: none;
+    border: none;
+    color: white;
+    background: rgb(85, 62, 62);
+    cursor: pointer;
+    font-size: 1.11rem;
+    padding: 0.2rem;
+    border: 0.1rem solid blue;
+    border-radius: 0.3rem;
+}
+.projects button:hover{
+
+   color: black;
+   background: white;
+}
+.projects button:focus + ul{
+    opacity: 1;
+    /* pointer-events: all; */
+}
+
+
+.navbar{
+    float: left;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;   
+    background-color: rgb(85, 62, 62);
+    height: 7vh;
+    /* width: 50vw; */
+    position: sticky;
+    left: 0;
+    top: 0;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem; 
+}
+.navbar ul{
+    display: flex;
+    
+}
+
+.navbar li{
+    list-style: none;
+    margin: 0.7rem;
+}
+
+.navbar a{
+    text-decoration: none;
+    padding: 0.2rem 2rem;
+    color: black;
+    background: white;
+    border: 0.1rem solid black;
+    border-radius: 0.7rem;
+    font-size: 1.2rem;    
+}
+.navbar a:hover{
+    color: white;
+    background: rgb(85, 62, 62);
+    animation: prac1 0.5s  ease-in-out 0s 1 alternate forwards;
+
+}
+
+
+@keyframes prac1 {
+    
+    from {
+        border-bottom-left-radius: 100px;
+        border-color: black;
+    }
+    to {
+        border-bottom-right-radius: 100px;
+        border-color: black;
+        
+}
+}
+
+
+
+#myUL{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#myUL li{
+    list-style: none;
+    text-align: center;
+    margin-bottom: 2rem;
+    width: 16rem;
+    margin-bottom: 3rem;
+
+}
+#myUL li p{
+    margin-bottom: 1rem;
+}
+#myUL li a{
+    color: white;
+    background: black;
+    text-decoration: none;
+    padding: 0.6rem;
+    border-radius: 0.3rem;
+}
+#myUL li a:hover{
+    color: rgb(81, 125, 207);
+    background: rgb(51, 32, 11);
+
+}
+#myUL li img{
+    height: 13rem;
+    width: 13rem;
+    border-radius: 1rem;
+    border: 0.1rem solid red;
+}
+#myUL li img:hover{
+    transform: scale(1.05);
+
+}
+
+
+#middle{
+    height: 58vh;
+    width: 100vw;
+    margin: 0;
+}
+#middle:before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 75vh;
+    width: 100vw;
+    z-index: -1;
+    /* opacity: 0.4; */
+    background: url(teleimage/teleimage3.jpeg) no-repeat center center/cover;
+
+}
+
+
+
+#aftermiddle{
+    height: 65vh;
+    width: 100vw;
+    margin: 0;
+    background: url(teleimage/teleimage3.jpeg);
+}
+#aftermiddle img{
+    border: 0.2rem solid black;
+}
+#aftermiddle img:hover{
+    border: 0.2rem solid white;
+}
+
+#aftermiddle .aftermiddleimages{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#aftermiddle h3{
+    text-align: center;
+    background: red;
+    color: white;
+}
+#aftermiddle .pics{  
+    height: 20vh;
+    width: 20vw;
+    margin: 1rem 2rem;
+    border: 0.2rem solid white;
+}
+
+#aftermiddle .pics:hover{
+    transform: scale(1.1);
+    border: 0.2rem solid black;
+    transform: translateY(0.7rem) scale(1.1);
+}
+
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 9px 20px;
+    /* width: 80%;
+    margin-left: 10%; */
+
+}
+.center{
+    text-align: center;
+}
+
+
+#contact{
+    margin-top: 0;
+    background-color: grey;
+    height: 25vh;
+    width: 100%;
+}
+
+.circle{
+    background-color: yellow;
+    height: 4rem;
+    width: 4rem;
+    position: relative;
+    border-radius: 100rem;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction:0 column;
+    box-shadow: 1px 1px black;
+    margin-bottom: 0.7rem;
+}
+#contact h3{
+    text-align: center;
+    background: red;
+    color: white;
+    padding: 0.6rem;
+}
+#contact h4{
+    text-align: center;
+    background: rgb(109, 109, 187);
+    color: rgb(7, 22, 7);
+    margin-bottom: 1.5rem;
+}
+
+#contact h5{
+    width: 100%;
+    text-align: center;
+    margin: 0.6rem 0;
+}
+
+.chat{
+    height: 1.5rem;
+    width: 2rem;
+    display: flex;
+    border: 0.1rem solid black;
+    justify-content: space-evenly;
+    align-items: center;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+.circle2,.circle3,.circle4{
+    height: 0.15rem;
+    width: 0.15rem;
+    border-radius: 100rem;
+    background-color: black;
+}
+.circle2{
+    position: relative;
+    animation-name: roopam1;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+    animation-timing-function: ease-in-out;
+
+}
+.circle3{
+    position: relative;
+    animation-name: roopam1;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-delay: 0.33s;
+    animation-timing-function: ease-in-out;
+}
+.circle4{
+    position: relative;
+    animation-name: roopam1;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-delay: 0.5s;
+    animation-timing-function: ease-in-out;
+}
+@keyframes roopam1{
+
+    from{
+        transform: translateY(-0.12rem);
+    }
+    to{
+        transform: translateY(0rem);
+
+    }
+
+}
